@@ -53,30 +53,32 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-blue-50 p-4">
-      <h1 className="text-3xl font-bold text-center text-blue-700 mb-6">
-        Student Council Voting
-      </h1>
+    <>
+      <div className="min-h-screen bg-blue-50 p-4">
+        <h1 className="mb-6 text-center text-3xl font-bold text-orange-500">
+          Student Council Voting
+        </h1>
 
-      <div className="max-w-xl mx-auto">
-        <PollForm addOption={addOption} />
+        <div className="mx-auto max-w-xl">
+          <PollForm addOption={addOption} />
 
-        <PollList
-          options={options}
-          vote={vote}
-          hasVoted={hasVoted}
-        />
+          <PollList
+            options={options}
+            vote={vote}
+            hasVoted={hasVoted}
+          />
 
-        <div className="text-center mt-6">
-          <button
-            onClick={resetVotes}
-            className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
-          >
-            Reset Votes
-          </button>
+          <div className="mt-6 text-center">
+            <button
+              onClick={resetVotes}
+              className="rounded bg-red-500 px-4 py-2 text-white hover:bg-red-600"
+            >
+              Reset Votes
+            </button>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
