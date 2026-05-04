@@ -4,9 +4,9 @@ import PollList from "./components/PollList";
 
 function App() {
   const defaultStudents = [
-    { id: 1, text: "Myles ", votes: 9},
-    { id: 2, text: "Enoch ", votes: 14},
-    { id: 3, text: "Jane ", votes: 7},
+    { id: 1, text: "Myles (president)", votes: 9},
+    { id: 2, text: "Enoch (Vice resident)", votes: 14},
+    { id: 3, text: "Jane (Secretary)", votes: 7},
   ];
 
   const [options, setOptions] = useState(() => {
@@ -46,11 +46,16 @@ function App() {
     setHasVoted(true);
   };
 
+  const deleteOption = (id) => {
+  const updated = options.filter((opt) => opt.id !== id);
+  setOptions(updated);
+};
+
  const resetVotes = () => {
   const reset = [
-    { id: 1, text: "Myles ", votes: 9 },
-    { id: 2, text: "Enoch ", votes: 14 },
-    { id: 3, text: "Jane ", votes: 7 }
+    { id: 1, text: "Myles (President)", votes: 9 },
+    { id: 2, text: "Enoch (Vice President)", votes: 14 },
+    { id: 3, text: "Jane (Secretary)", votes: 7 }
   ];
 
   setOptions(reset);
@@ -71,6 +76,7 @@ function App() {
             options={options}
             vote={vote}
             hasVoted={hasVoted}
+            deleteOption={deleteOption}
           />
 
           <div className="mt-6 text-center">
