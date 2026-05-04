@@ -28,5 +28,5 @@ It is to help the voting process be smooth and handle the vote count automatical
 * Jane Nyasoro
 * Bruce
 * Elias
-* Glenn 
+* Glenn Wahome
 
