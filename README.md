@@ -1,11 +1,5 @@
 # group4react-app
-<<<<<<< HEAD
 
-GROUP MEMBERS:
-1.Jane Nyasoro
-2.
-3.
-=======
 ## Project overview
 The group4react-app is a web application that allows users to cast a vote and even add or remove a poll option.
 It has a feature that displays live vote count based on thee percentage of voes each candidate has received in each point in time.
