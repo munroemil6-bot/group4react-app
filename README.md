@@ -34,5 +34,6 @@ It is to help the voting process be smooth and handle the vote count automatical
 * Jane Nyasoro
 * Bruce
 * Elias
+* Glenn 
 
 >>>>>>> b48da2a729e0b968a550fe232c56d3e899007d37
